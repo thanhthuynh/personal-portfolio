@@ -15,7 +15,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		name: 'Software Engineer Intern',
 		color: '#4B8BBE', // Python blue
 		links: [],
-		logo: Assets.Unknown, // Replace with actual logo if available
+		logo: Assets.CidarLab, // Replace with actual logo if available
 		shortDescription: 'Improved automated control in microfluidics through GUI development and optimization.'
 	},
 	{
@@ -30,7 +30,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		name: 'Game Developer Intern',
 		color: '#963D32', // Unity maroon
 		links: [],
-		logo: Assets.Unknown, // Replace with actual logo if available
+		logo: Assets.TheVerse, // Replace with actual logo if available
 		shortDescription: 'Contributed to game development and 3D character model design in Unity.'
 	},
 	{
@@ -45,7 +45,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		name: 'Web Developer Intern',
 		color: '#F0DB4F', // JavaScript yellow
 		links: [],
-		logo: Assets.Unknown, // Replace with actual logo if available
+		logo: Assets.Hack4Impact, // Replace with actual logo if available
 		shortDescription: 'Enhanced educational accessibility through web development and UI/UX design.'
 	}
 ];

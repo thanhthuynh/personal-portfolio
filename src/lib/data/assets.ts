@@ -71,7 +71,10 @@ const Assets = {
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
-	Profile: a('profile.jpeg')
+	Profile: a('profile.jpeg'),
+	CidarLab: a('CidarLab.png'),
+	TheVerse: a('TheVerse.png'),
+	Hack4Impact: a('hack4impact.svg'),
 };
 
 export default Assets;

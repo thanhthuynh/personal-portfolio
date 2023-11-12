@@ -47,7 +47,7 @@ export const HOME: HomePageParams = {
     name: 'Thanh',
     lastName: 'Huynh',
     description:
-        'a first-generation student at Boston University, originally from Philadelphia, and an aspiring software engineer fueled by a passion for technology and innovation.\n Beyond the world of code, I\'m an avid weightlifter, cooking enthusiast, and rock climbing aficionado. I love exploring new restaurants, tuning into podcasts, and diving into personal coding projects. My diverse interests not only keep me balanced but also constantly inspire my approach to software development. Welcome to my portfolio, where I share my journey and the projects that ignite my creativity!',
+        'a first-generation student at Boston University, originally from Philadelphia, and an aspiring software engineer fueled by a passion for tech and innovation.',
     profilePic: Assets.Profile,
     links: [
         { platform: Platform.GitHub, 
@@ -55,7 +55,7 @@ export const HOME: HomePageParams = {
         },
         {
             platform: Platform.Linkedin,
-            link: 'https://www.linkedin.com/thanhthuynh'
+            link: 'https://www.linkedin.com/in/thanhthuynh/'
         },
         {
             platform: Platform.Email,
