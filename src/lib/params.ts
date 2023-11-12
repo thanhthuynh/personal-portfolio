@@ -47,7 +47,12 @@ export const HOME: HomePageParams = {
     name: 'Thanh',
     lastName: 'Huynh',
     description:
-        'Where bytes meet bright ideas – Thanh\'s portfolio: a byte-sized wonderland of clever code and whimsical web wizardry!',
+	`Hello! I'm a first-generation student at Boston University,
+	 originally from Philadelphia, and an aspiring software engineer fueled by a passion for technology and innovation. 
+	 Beyond the world of code, I'm an avid weightlifter, cooking enthusiast, and rock climbing aficionado. 
+	 I love exploring new restaurants, tuning into podcasts, and diving into personal coding projects. 
+	 My diverse interests not only keep me balanced but also constantly inspire my approach to software development.
+	  Welcome to my portfolio, where I share my journey and the projects that ignite my creativity!`,
     profilePic: Assets.Profile,
     links: [
         { platform: Platform.GitHub, 
