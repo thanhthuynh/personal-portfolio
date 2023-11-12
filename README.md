@@ -1,20 +1,32 @@
-# Slick Portfolio With Svelte.
+# Thanh's Website Portfolio
 
-Vercel-like style portfolio template for developers.
+Welcome to the repository for my personal website portfolio! This site showcases my skills, projects, and experiences as a software developer. It's a byte-sized wonderland where clever code meets whimsical web wizardry.
 
-If you want to use the template as it is, you can :
+## Features
 
-- update `src/lib/params.ts` with your data.
-- update `src/lib/index.scss` for custom styling.
-- update `static/favicon.ico` to customize the tab's icon.
+- **Portfolio Projects**: A showcase of my best work.
+- **Professional Experience**: A timeline of my career journey.
+- **Skills Overview**: A breakdown of my technical and soft skills.
+- **Dynamic Resume**: Downloadable and always up-to-date.
+- **Contact Information**: Easy ways to reach out to me.
 
-Feel free to explore and hack the template to your needs if you feel like it.
+## Technologies Used
 
-Before deploying to `GitHub Pages`:
+- **Frontend**: [React.js](https://reactjs.org/)/[Vue.js](https://vuejs.org/)/[Svelte](https://svelte.dev/) (choose as applicable)
+- **Styling**: CSS3, [Sass](https://sass-lang.com/), [Tailwind CSS](https://tailwindcss.com/)
+- **Backend** (if applicable): [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/)
+- **Database** (if applicable): [MongoDB](https://www.mongodb.com/), [Firebase](https://firebase.google.com/)
+- **Deployment**: [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), [GitHub Pages](https://pages.github.com/)
 
-- make sure to change the `base` parameter in `svelte.config.js`.
-- allow `GitHub Pages` in your repo settings.
+## Local Development
 
-## Known issues:
+To run this project locally:
 
-- Svelte no longer support `node 14`, use a newer version instead.
+```bash
+git clone https://github.com/your-github-username/website-portfolio.git
+cd website-portfolio
+# Install dependencies
+npm install
+# Serve on localhost
+npm run start
+```
