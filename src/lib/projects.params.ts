@@ -10,8 +10,8 @@ const MY_PROJECTS: Array<Project> = [
 			'A full-stack web app that uses Firebase, Express, React, Node, OpenAI, and Spotify APIs to fetch user playlist data and generate playlist artwork based on sentiment analysis with 98% accuracy.',
 		shortDescription:
 			'Combining AI and music, this app creates custom Spotify playlist artwork, harnessing sentiment analysis for personalized designs.',
-		links: [{ to: 'https://github.com/thanhthuynh/ai-spotify-art-generator', label: 'GitHub' }],
-		logo: Assets.JavaScript, // Assuming you have a Spotify asset
+		links: [{ to: 'https://github.com/thanhthuynh/spotify-art-generator', label: 'GitHub' }],
+		logo: Assets.JavaScript,
 		name: 'A.I. Spotify Art Generator',
 		period: {
 			from: new Date('2023-04-01'),
@@ -28,7 +28,7 @@ const MY_PROJECTS: Array<Project> = [
 		shortDescription:
 			'An efficient bot that aids students in course registration by automating schedule generation and conflict resolution.',
 		links: [{ to: 'https://github.com/thanhthuynh/course-registration-bot', label: 'GitHub' }],
-		logo: Assets.Pandas, // Assuming you have a Bot-related asset
+		logo: Assets.Python,
 		name: 'Course Registration Bot',
 		period: {
 			from: new Date('2022-06-01'),
