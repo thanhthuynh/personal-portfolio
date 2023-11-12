@@ -4,62 +4,38 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
-		color: '#5e95e3',
+		slug: 'ai-spotify-art-generator',
+		color: '#1DB954', // Spotify green
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			'A full-stack web app that uses Firebase, Express, React, Node, OpenAI, and Spotify APIs to fetch user playlist data and generate playlist artwork based on sentiment analysis with 98% accuracy.',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+			'Combining AI and music, this app creates custom Spotify playlist artwork, harnessing sentiment analysis for personalized designs.',
+		links: [{ to: 'https://github.com/thanhthuynh/ai-spotify-art-generator', label: 'GitHub' }],
+		logo: Assets.JavaScript, // Assuming you have a Spotify asset
+		name: 'A.I. Spotify Art Generator',
 		period: {
-			from: new Date()
+			from: new Date('2023-04-01'),
+			to: new Date('2023-05-31')
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		skills: getSkills('javascript', 'typescript', 'html', 'css', 'firebase', 'react', 'node'),
+		type: 'Web Application'
 	},
 	{
-		slug: 'slick-portfolio-svelte',
-		color: '#ff3e00',
+		slug: 'course-registration-bot',
+		color: '#2E86C1', // A blue color
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'Engineered a web application using pandas and selenium to scrape and parse BU’s registrar, generate valid schedules based on preferences, and eliminate conflicts, significantly reducing time spent searching for open courses.',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+			'An efficient bot that aids students in course registration by automating schedule generation and conflict resolution.',
+		links: [{ to: 'https://github.com/thanhthuynh/course-registration-bot', label: 'GitHub' }],
+		logo: Assets.Pandas, // Assuming you have a Bot-related asset
+		name: 'Course Registration Bot',
 		period: {
-			from: new Date()
+			from: new Date('2022-06-01'),
+			to: new Date('2022-08-31')
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
-		screenshots: [
-			{
-				label: 'screen 1',
-				src: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '2',
-				src: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '3',
-				src: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '4',
-				src: 'https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '5',
-				src: 'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '6',
-				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			}
-		]
+		skills: getSkills('python', 'javascript', 'html', 'css', 'mongodb'),
+		type: 'Web Application'
 	}
 ];
 

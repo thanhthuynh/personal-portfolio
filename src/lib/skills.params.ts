@@ -62,6 +62,34 @@ const MY_SKILLS = [
 		description: svelte,
 		logo: Assets.Svelte,
 		name: 'Svelte'
+	}),
+	s({
+		slug: 'python',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Python,
+		name: 'Python'
+	}),
+	s({
+		slug: 'C',
+		color: 'blue',
+		description: svelte,
+		logo: Assets.Cpp,
+		name: 'C/C++'
+	}),
+	s({
+		slug: 'java',
+		color: 'yellow',
+		description: svelte,
+		logo: Assets.Java,
+		name: 'Java'
+	}),
+	s({
+		slug: 'Kotlin',
+		color: 'purple',
+		description: svelte,
+		logo: Assets.Kotlin,
+		name: 'Kotlin'
 	})
 ];
 

@@ -1,3 +1,4 @@
+import Assets from './data/assets';
 import MY_EXPERIENCES from './experiences.params';
 import MY_PROJECTS from './projects.params';
 import MY_SKILLS from './skills.params';
@@ -12,7 +13,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = 'Thanh\'s Website Portfolio';
 
 export const NavBar = {
 	home: 'Home',
@@ -42,38 +43,29 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 };
 
 export const HOME: HomePageParams = {
-	title: 'Home',
-	name: 'Name',
-	lastName: 'LASTNAME',
-	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
-	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
-		{
-			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
-		},
-		{
-			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
-		},
-		{
-			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
-		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
-		},
-		{
-			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
-		}
-	]
+    title: 'Home',
+    name: 'Thanh',
+    lastName: 'Huynh',
+    description:
+        'Where bytes meet bright ideas – Thanh\'s portfolio: a byte-sized wonderland of clever code and whimsical web wizardry!',
+    profilePic: Assets.Profile,
+    links: [
+        { platform: Platform.GitHub, 
+            link: 'https://github.com/thanhthuynh' 
+        },
+        {
+            platform: Platform.Linkedin,
+            link: 'https://www.linkedin.com/thanhthuynh'
+        },
+        {
+            platform: Platform.Email,
+            link: 'thanhthuynh7@gmail.com'
+        },
+        {
+            platform: Platform.Facebook,
+            link: 'https://www.facebook.com/thanhthuynh'
+        }
+    ]
 };
 
 export const PROJECTS: ProjectPageParams = {
@@ -93,7 +85,7 @@ export const SKILLS: SkillsPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: ''
+	item: 'https://drive.google.com/file/d/17TzcYaSu4iJHDO4CFA2LJuMadpAn70Nh/view?usp=drive_link'
 };
 
 export const SEARCH: SearchPageParams = {

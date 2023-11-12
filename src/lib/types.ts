@@ -76,6 +76,7 @@ export interface HomePageParams extends PageParams {
 	name: string;
 	lastName: string;
 	description: string;
+	profilePic: Asset;
 	links: Array<HomeLink>;
 	skills?: Array<Skill>;
 }
