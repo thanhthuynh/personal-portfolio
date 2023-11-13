@@ -67,7 +67,7 @@
 	});
 </script>
 
-<div class="carrousel flex-[0.5] column-center">
+<div class="carrousel flex-[0.25] column-center">
 	<button
 		class="column-center font-500 p-5px m-y-10px m-x-75px cursor-pointer border-1px border-solid border-[var(--border)] bg-transparent rounded-[50%] hover:border-[var(--border-hover)]"
 		on:click={toggleUp}
@@ -78,7 +78,7 @@
 		<UIcon icon="i-carbon-chevron-up" />
 	</button>
 
-	<div bind:this={element} class="column overflow-hidden box-content h-[560px]">
+	<div bind:this={element} class="column overflow-hidden box-content w-[150px] h-[560px]">
 		{#each items as item}
 			<div class="box-content w-150px p-15px col-center">
 				<img class="w-120px h-120px aspect-square" src={getAssetURL(item.logo)} alt={item.name} />
