@@ -7,61 +7,58 @@
 	export let items: Array<Skill> = [];
 	const delay = 2000;
 
-	let element: HTMLElement;
+	const visibleItems = 3;
 
-	let timeout: unknown;
-	let index = 0;
-	let toRight = true;
+    let element: HTMLElement;
+    let timeout: unknown;
+    let index = 0;
+    let downward = true;
 
 	$: {
 		if (element) {
 			element.scroll({
-				left: index * 150,
+				top: index * 190,
 				behavior: 'smooth'
 			});
 		}
 	}
+    const slide = (down: boolean) => {
+        if (down) {
+            if (index < items.length - visibleItems) {
+                index++;
+            } else {
+                index--;
+                downward = false;
+            }
+        } else {
+            if (index > 0) {
+                index--;
+            } else {
+                index++;
+                downward = true;
+            }
+        }
+    };
 
-	const slide = (right: boolean) => {
-		if (right) {
-			if (index < items.length - 1) {
-				index = index + 1;
-			} else {
-				index = index - 1;
-				toRight = false;
-			}
-		} else {
-			if (index > 0) {
-				index = index - 1;
-			} else {
-				index = index + 1;
-				toRight = true;
-			}
-		}
-	};
+    const toggle = (down: boolean) => {
+        clearTimeout(timeout as number);
+        timeout = setTimeout(() => {
+            slide(down);
+            toggle(downward);
+        }, delay);
+    };
 
-	const toggle = (right: boolean) => {
+	const toggleUp = () => {
 		clearTimeout(timeout as number);
-
-		timeout = setTimeout(() => {
-			slide(right);
-
-			toggle(toRight);
-		}, delay);
-	};
-
-	const toggleLeft = () => {
-		clearTimeout(timeout as number);
-		toRight = false;
 		slide(false);
-		toggle(toRight);
+		toggle(downward);
 	};
 
-	const toggleRight = () => {
+	const toggleDown = () => {
 		clearTimeout(timeout as number);
-		toRight = true;
+		downward = true;
 		slide(true);
-		toggle(toRight);
+		toggle(downward);
 	};
 
 	onMount(() => {
@@ -69,18 +66,18 @@
 	});
 </script>
 
-<div class="carrousel flex-[0.5] row-center">
+<div class="carrousel flex-[0.5] column-center">
 	<button
-		class="row-center font-500 p-5px m-y-0px m-x-10px cursor-pointer border-1px border-solid border-[var(--border)] bg-transparent rounded-[50%] hover:border-[var(--border-hover)]"
-		on:click={toggleLeft}
+		class="column-center font-500 p-5px m-y-10px m-x-75px cursor-pointer border-1px border-solid border-[var(--border)] bg-transparent rounded-[50%] hover:border-[var(--border-hover)]"
+		on:click={toggleUp}
 		on:keyup
 		on:keydown
 		on:keypress
 	>
-		<UIcon icon="i-carbon-chevron-left" />
+		<UIcon icon="i-carbon-chevron-up" />
 	</button>
 
-	<div bind:this={element} class="row overflow-hidden box-content w-150px">
+	<div bind:this={element} class="column overflow-hidden box-content h-[560px]">
 		{#each items as item}
 			<div class="box-content w-150px p-15px col-center">
 				<img class="w-120px h-120px aspect-square" src={getAssetURL(item.logo)} alt={item.name} />
@@ -90,12 +87,12 @@
 	</div>
 
 	<button
-		class="row-center font-500 p-5px m-y-0px m-x-10px cursor-pointer border-1px border-solid border-[var(--border)] bg-transparent rounded-[50%] hover:border-[var(--border-hover)]"
-		on:click={toggleRight}
+		class="column-center font-500 p-5px m-y-10px m-x-75px cursor-pointer border-1px border-solid border-[var(--border)] bg-transparent rounded-[50%] hover:border-[var(--border-hover)]"
+		on:click={toggleDown}
 		on:keyup
 		on:keydown
 		on:keypress
 	>
-		<UIcon icon="i-carbon-chevron-right" />
+		<UIcon icon="i-carbon-chevron-down" />
 	</button>
 </div>

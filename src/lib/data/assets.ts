@@ -75,6 +75,11 @@ const Assets = {
 	CidarLab: a('CidarLab.png'),
 	TheVerse: a('TheVerse.png'),
 	Hack4Impact: a('hack4impact.svg'),
+	Spotify: a('spotify.png'),
+	OpenAI: a('openai.jpeg'),
+	NextJs: a('next-js.svg'),
+	MatLab: a('matlab.png'),
+	LeetCode: a('leetcode.png'),
 };
 
 export default Assets;
