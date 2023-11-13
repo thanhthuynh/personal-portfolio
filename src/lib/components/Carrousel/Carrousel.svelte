@@ -50,6 +50,7 @@
 
 	const toggleUp = () => {
 		clearTimeout(timeout as number);
+		downward = false
 		slide(false);
 		toggle(downward);
 	};

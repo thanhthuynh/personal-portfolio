@@ -47,8 +47,8 @@
 
 <style>
     .profile-pic {
-        width: 200px; /* Increased the width */
-        height: 200px; /* Increased the height */
+        width: 300px; /* Increased the width */
+        height: 300px; /* Increased the height */
         border-radius: 50%; /* Keeps the image circular */
         /* Feel free to add more styling as needed */
     }
