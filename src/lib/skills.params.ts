@@ -96,6 +96,13 @@ const MY_SKILLS = [
 		name: 'Numpy'
 	}),
 	s({
+		slug: 'matlab',
+		color: 'purple',
+		description: svelte,
+		logo: Assets.MatLab,
+		name: 'MATLAB'
+	}),
+	s({
 		slug: 'kotlin',
 		color: 'purple',
 		description: svelte,
