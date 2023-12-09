@@ -47,7 +47,7 @@ export const HOME: HomePageParams = {
     name: 'Thanh',
     lastName: 'Huynh',
     description:
-        'a first-generation Vietnamese student at Boston University, originally from Philadelphia, and an aspiring software engineer fueled by a passion for technology and innovation.',
+        'a first-generation Vietnamese-American student at Boston University, originally from Philadelphia, and an aspiring software engineer fueled by a passion for technology and innovation.',
     profilePic: Assets.Profile,
     links: [
         { platform: Platform.GitHub, 
